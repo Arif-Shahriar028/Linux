@@ -1,0 +1,7 @@
+Read only hard drive problem in Ubuntu :
+
+go to windows os-> settings-> power and sleep -> additional power settings-> choose what power button do -> uncheck "turn on fast startup" option 
+
+# kill a process 
+sudo lsof -i :3001
+sudo kill `pid`
