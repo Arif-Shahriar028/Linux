@@ -5,3 +5,10 @@ go to windows os-> settings-> power and sleep -> additional power settings-> cho
 # kill a process 
 sudo lsof -i :3001
 sudo kill `pid`
+
+
+wrong fs type, bad option, bad sperblock:
+https://askubuntu.com/questions/525243/why-do-i-get-wrong-fs-type-bad-option-bad-superblock-error
+sudo apt-get update
+sudo apt-get install ntfs-3g
+
