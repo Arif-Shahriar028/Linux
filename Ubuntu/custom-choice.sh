@@ -73,4 +73,3 @@ install_software
 
 # Clean up
 sudo apt-get autoremove
-sudo apt-get clean
