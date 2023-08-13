@@ -38,6 +38,7 @@ install_software() {
 
 # Prompt user to select apps to install
 echo "Which apps would you like to install?"
+echo "0. Install All Apps"
 echo "1. Zsh"
 echo "2. Oh-my-zsh"
 echo "3. Java JRE"
@@ -67,6 +68,11 @@ echo "Enter app numbers separated by spaces (e.g. 1 2 3):"
 
 # Read user input
 read -a selected_apps
+
+# Install selected software
+if [[ "${selected_apps[*]}" == *0* ]]; then
+  selected_apps=(1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34)
+fi
 
 # Install selected software
 install_software
